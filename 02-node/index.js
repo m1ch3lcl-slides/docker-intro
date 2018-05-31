@@ -2,15 +2,15 @@ const express = require('express');
 
 const app = express();
 
-// const name = 'World';
-const name = process.env.NAME;
+const name = 'World';
+// const name = process.env.NAME;
 
-app.get('/hi', (req, res) => {
-  require('http').get('http://hi:8000/', response => {
-    res.status(response.statusCode);
-    response.pipe(res);
-  });
-});
+// app.get('/hi', (req, res) => {
+//   require('http').get('http://hi:8000/', response => {
+//     res.status(response.statusCode);
+//     response.pipe(res);
+//   });
+// });
 
 app.use((req, res) => {
   console.log(req.url);
