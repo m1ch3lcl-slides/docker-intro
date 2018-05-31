@@ -1,0 +1,23 @@
+version: '3'
+services:
+  web:
+    build: './'
+    entrypoint: npm start
+    environment:
+      NAME: James
+    volumes:
+      - logs-volume:/logs
+    networks:
+      local:
+        aliases:
+          - mywebapp
+  helloworld:
+    image: crccheck/hello-world
+    networks:
+      local:
+        aliases:
+          - hi
+volumes:
+  logs-volume:
+networks:
+  local:
