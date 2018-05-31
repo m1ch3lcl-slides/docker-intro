@@ -13,9 +13,7 @@ export default (
       </Text>
     </Appear>
     <Text textColor="secondary" size={5} fit style={{ marginTop: '50px' }}>
-      <a href="https://m1ch3lcl-slides.github.io/docker-intro/">
-        https://m1ch3lcl-slides.github.io/docker-intro/
-      </a>
+      <a href="https://goo.gl/xzGS2P">https://goo.gl/xzGS2P</a>
     </Text>
   </Slide>
 );

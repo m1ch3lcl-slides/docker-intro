@@ -1,5 +1,5 @@
 import React from 'react';
-import { Slide, Heading, ListItem, Text } from 'spectacle';
+import { Slide, Heading, ListItem, Text, Appear } from 'spectacle';
 import { FitList } from '../tags';
 
 export default (
@@ -37,6 +37,12 @@ export default (
           https://docs.docker.com/engine/reference/builder/
         </a>
       </Text>
+      <Appear>
+        <Text>
+          git clone --depth=1
+          https://github.com/m1ch3lcl-slides/docker-intro.git -b examples
+        </Text>
+      </Appear>
     </div>
   </Slide>
 );
